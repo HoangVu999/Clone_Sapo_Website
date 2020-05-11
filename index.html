@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sapo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script>
+        $(function () {
+            $("header").load("template/header.html");
+            $("footer").load("template/footer.html");
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<nav>
+</nav>
+
+
+<div class="news-aboutus">
+    <!--    <div class="container">-->
+    <!--        <h2>Tin tức Sapo</h2>-->
+    <!--        <ul class="nav nav-tabs">-->
+    <!--            <li class="nav-item">-->
+    <!--                <a class="nav-link" data-toggle="tab" href="#Newspaper">Báo chí nói gì về chúng tôi</a>-->
+    <!--            </li>-->
+    <!--            <li class="nav-item">-->
+    <!--                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#Newsfunction">Cập nhật tính năng-->
+    <!--                    mới<span class="badge">New</span></a>-->
+    <!--            </li>-->
+    <!--        </ul>-->
+    <!--        <div class="tab-content">-->
+    <!--            <div class="tab-pane fade" id="Newspaper" role="tabpanel">-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-xl-4 col-lg-4 col-md-6 col-12  item">-->
+    <!--                        <div class="news-item">-->
+    <!--                            <a href="/bao-chi-noi-ve-sapo/Sapo-hop-tac-Sendo-thuan-tien-cho-cac-chu-shop-online-quan-ly-ban-hang-da-kenh-a2542.html">-->
+    <!--                                <img alt="Sapo hợp tác Sendo, thuận tiện cho các chủ shop online quản lý bán hàng đa kênh"-->
+    <!--                                     data-src="https://www.sapo.vn/Thumbnail/Cache//Upload/News/2020/3/25/53594e0518c4c7263f9897648f8079f3_360_250.jpg"-->
+    <!--                                     onerror="this.src='https://www.sapo.vn/ThumbnailCrop.ashx?i=~/Upload/News/2020/3/25/53594e0518c4c7263f9897648f8079f3.jpg&amp;w=360&amp;h=250'"-->
+    <!--                                     src="/Themes/Portal/Default/StylesV2/Images/image-transparent.png"-->
+    <!--                                     title="Sapo hợp tác Sendo, thuận tiện cho các chủ shop online quản lý bán hàng đa kênh">-->
+    <!--                            </a>-->
+    <!--                            <div class="time">-->
+    <!--                                <i class="fa fa-clock-o"></i> Thứ 4, 25/03/2020-->
+    <!--                            </div>-->
+    <!--                            <div class="title">-->
+    <!--                                <a href="/bao-chi-noi-ve-sapo/Sapo-hop-tac-Sendo-thuan-tien-cho-cac-chu-shop-online-quan-ly-ban-hang-da-kenh-a2542.html"-->
+    <!--                                   class="article-title" target="_blank">-->
+    <!--                                    Sapo hợp tác Sendo, thuận tiện cho các chủ shop online quản lý bán hàng đa kênh-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                            <div class="continue">-->
+    <!--                                <a href="/bao-chi-noi-ve-sapo/Sapo-hop-tac-Sendo-thuan-tien-cho-cac-chu-shop-online-quan-ly-ban-hang-da-kenh-a2542.html"-->
+    <!--                                   class="article-title" target="_blank">-->
+    <!--                                    Đọc tiếp →-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                            <span class="source-name">VTV</span>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-none d-lg-block item">-->
+    <!--                        <div class="news-item">-->
+    <!--                            <a href="/bao-chi-noi-ve-sapo/Sapo-bat-tay-cung-Sendo-mo-rong-kenh-ban-hang-cho-chu-shop-online-a2541.html">-->
+    <!--                                <img alt="Sapo bắt tay cùng Sendo, mở rộng kênh bán hàng cho chủ shop online"-->
+    <!--                                     data-src="https://www.sapo.vn/Thumbnail/Cache//Upload/News/2020/3/24/5ed27d498ddfb4f580502c3eb84ffa81_360_250.png"-->
+    <!--                                     onerror="this.src='https://www.sapo.vn/ThumbnailCrop.ashx?i=~/Upload/News/2020/3/24/5ed27d498ddfb4f580502c3eb84ffa81.png&amp;w=360&amp;h=250'"-->
+    <!--                                     src="/Themes/Portal/Default/StylesV2/Images/image-transparent.png"-->
+    <!--                                     title="Sapo bắt tay cùng Sendo, mở rộng kênh bán hàng cho chủ shop online">-->
+    <!--                            </a>-->
+    <!--                            <div class="time">-->
+    <!--                                <i class="fa fa-clock-o"></i> Thứ 3, 24/03/2020-->
+    <!--                            </div>-->
+    <!--                            <div class="title">-->
+    <!--                                <a href="/bao-chi-noi-ve-sapo/Sapo-bat-tay-cung-Sendo-mo-rong-kenh-ban-hang-cho-chu-shop-online-a2541.html"-->
+    <!--                                   class="article-title" target="_blank">-->
+    <!--                                    Sapo bắt tay cùng Sendo, mở rộng kênh bán hàng cho chủ shop online-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                            <div class="continue">-->
+    <!--                                <a href="/bao-chi-noi-ve-sapo/Sapo-bat-tay-cung-Sendo-mo-rong-kenh-ban-hang-cho-chu-shop-online-a2541.html"-->
+    <!--                                   class="article-title" target="_blank">-->
+    <!--                                    Đọc tiếp →-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                            <span class="source-name">TheLeader</span>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-none d-md-block item">-->
+    <!--                        <div class="news-item">-->
+    <!--                            <a href="/bao-chi-noi-ve-sapo/Nhin-lai-kinh-doanh-2019-Gan-1-nua-shop-mat-mua-dau-la-chia-khoa-but-pha-2020-a2540.html">-->
+    <!--                                <img alt="Nhìn lại kinh doanh 2019: Gần 1 nửa shop &quot;mất mùa&quot;, đâu là chìa khóa bứt phá 2020?"-->
+    <!--                                     data-src="https://www.sapo.vn/Thumbnail/Cache//Upload/kinh-doanh-nho-nam-2017-hieu-qua_360_250.jpg"-->
+    <!--                                     onerror="this.src='https://www.sapo.vn/ThumbnailCrop.ashx?i=~/Upload/kinh-doanh-nho-nam-2017-hieu-qua.jpg&amp;w=360&amp;h=250'"-->
+    <!--                                     src="/Themes/Portal/Default/StylesV2/Images/image-transparent.png"-->
+    <!--                                     title="Nhìn lại kinh doanh 2019: Gần 1 nửa shop &quot;mất mùa&quot;, đâu là chìa khóa bứt phá 2020?">-->
+    <!--                            </a>-->
+    <!--                            <div class="time">-->
+    <!--                                <i class="fa fa-clock-o"></i> Thứ 3, 04/02/2020-->
+    <!--                            </div>-->
+    <!--                            <div class="title">-->
+    <!--                                <a href="/bao-chi-noi-ve-sapo/Nhin-lai-kinh-doanh-2019-Gan-1-nua-shop-mat-mua-dau-la-chia-khoa-but-pha-2020-a2540.html"-->
+    <!--                                   class="article-title" target="_blank">-->
+    <!--                                    Nhìn lại kinh doanh 2019: Gần 1 nửa shop "mất mùa", đâu là chìa khóa bứt phá 2020?-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                            <div class="continue">-->
+    <!--                                <a href="/bao-chi-noi-ve-sapo/Nhin-lai-kinh-doanh-2019-Gan-1-nua-shop-mat-mua-dau-la-chia-khoa-but-pha-2020-a2540.html"-->
+    <!--                                   class="article-title" target="_blank">-->
+    <!--                                    Đọc tiếp →-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                            <span class="source-name">Brandsvietnam</span>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="text-center">-->
+    <!--                    <a href="/bao-chi-noi-ve-sapo.html" class="see-more">Xem thêm báo chí nói về Sapo</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="tab-pane fade show active" id="Newsfunction" role="tabpanel">-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 item">-->
+    <!--                        <div class="news-item"><a-->
+    <!--                                href="https://www.sapo.vn/blog/sapo-update-tinh-nang-web-moi-cuc-ngau-duong-dau-covy/"-->
+    <!--                                target="_blank">-->
+    <!--                            <img class="news-blog fade show"-->
+    <!--                                 src="https://www.sapo.vn/blog/wp-content/uploads/2020/04/danh-gia-san-pham-web4-768x541.jpg"></a>-->
+    <!--                            <div class="time"><i class="fa fa-clock-o"></i> Thứ 5, 16/04/2020</div>-->
+    <!--                            <div class="title"><a-->
+    <!--                                    href="https://www.sapo.vn/blog/sapo-update-tinh-nang-web-moi-cuc-ngau-duong-dau-covy/"-->
+    <!--                                    class="article-title" target="_blank"-->
+    <!--                                    title="[Sapo update]: Tính năng Web mới hỗ trợ shop kinh doanh mùa dịch Covid">[Sapo-->
+    <!--                                update]: Tính năng Web mới hỗ trợ shop kinh doanh mùa dịch Covid</a></div>-->
+    <!--                            <div class="continue"><a-->
+    <!--                                    href="https://www.sapo.vn/blog/sapo-update-tinh-nang-web-moi-cuc-ngau-duong-dau-covy/"-->
+    <!--                                    class="article-title" target="_blank"-->
+    <!--                                    title="[Sapo update]: Tính năng Web mới hỗ trợ shop kinh doanh mùa dịch Covid">Đọc-->
+    <!--                                tiếp →</a></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-none d-lg-block item">-->
+    <!--                        <div class="news-item"><a-->
+    <!--                                href="https://www.sapo.vn/blog/fnb-update-tinh-nang-moi-ho-tro-khach-hang-vuot-qua-mua-dich-covid/"-->
+    <!--                                target="_blank"><img class="news-blog fade show"-->
+    <!--                                                     src="https://www.sapo.vn/blog/wp-content/uploads/2020/04/nhà-hàng-1-768x512.jpg"-->
+    <!--                        ></a>-->
+    <!--                            <div class="time"><i class="fa fa-clock-o"></i> Thứ 6, 10/04/2020</div>-->
+    <!--                            <div class="title"><a-->
+    <!--                                    href="https://www.sapo.vn/blog/fnb-update-tinh-nang-moi-ho-tro-khach-hang-vuot-qua-mua-dich-covid/"-->
+    <!--                                    class="article-title" target="_blank"-->
+    <!--                                    title="[Sapo update]: Sapo FnB thêm tính năng mới hỗ trợ khách hàng vượt qua mùa dịch Covid">[Sapo-->
+    <!--                                update]: Sapo FnB thêm tính năng mới hỗ trợ khách hàng vượt qua mùa dịch Covid</a></div>-->
+    <!--                            <div class="continue"><a-->
+    <!--                                    href="https://www.sapo.vn/blog/fnb-update-tinh-nang-moi-ho-tro-khach-hang-vuot-qua-mua-dich-covid/"-->
+    <!--                                    class="article-title" target="_blank"-->
+    <!--                                    title="[Sapo update]: Sapo FnB thêm tính năng mới hỗ trợ khách hàng vượt qua mùa dịch Covid">Đọc-->
+    <!--                                tiếp →</a></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-none d-md-block item">-->
+    <!--                        <div class="news-item"><a-->
+    <!--                                href="https://www.sapo.vn/blog/sapo-express-them-nhieu-tinh-nang-cai-tien-moi/"-->
+    <!--                                target="_blank"><img class="news-blog fade show"-->
+    <!--                                                     src="https://www.sapo.vn/blog/wp-content/uploads/2020/04/Online-Food-Delivery&#45;&#45;768x327.png"-->
+    <!--                        ></a>-->
+    <!--                            <div class="time"><i class="fa fa-clock-o"></i> Thứ 5, 9/04/2020</div>-->
+    <!--                            <div class="title"><a-->
+    <!--                                    href="https://www.sapo.vn/blog/sapo-express-them-nhieu-tinh-nang-cai-tien-moi/"-->
+    <!--                                    class="article-title" target="_blank"-->
+    <!--                                    title="[Sapo Update]: Sapo Express tích hợp nhiều tính năng mới, thêm lợi ích cho chủ shop">[Sapo-->
+    <!--                                Update]: Sapo Express tích hợp nhiều tính năng mới, thêm lợi ích cho chủ shop</a></div>-->
+    <!--                            <div class="continue"><a-->
+    <!--                                    href="https://www.sapo.vn/blog/sapo-express-them-nhieu-tinh-nang-cai-tien-moi/"-->
+    <!--                                    class="article-title" target="_blank"-->
+    <!--                                    title="[Sapo Update]: Sapo Express tích hợp nhiều tính năng mới, thêm lợi ích cho chủ shop">Đọc-->
+    <!--                                tiếp →</a></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="text-center">-->
+    <!--                    <a href="https://www.sapo.vn/blog/tin-su-kien-sapo/sapo-update/" target="_blank" class="see-more">Xem-->
+    <!--                        thêm cập nhật tính năng mới</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="news-sources">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 source-item no-border">
+                    <img height="20" src="./image/logo-dantri.png"
+                         class="fade show">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 source-item">
+                    <img height="31" src="./image/logo-cafebiz.png"
+                         data-src="./image/logo-cafebiz.png"
+                         alt="Nền tảng quản lý và bán hàng đa kênh tốt nhất cho bạn" class="fade show">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 source-item">
+                    <img height="20" src="./image/logo-vtv.png"
+                         data-src="./image/logo-vtv.png"
+                         alt="Nền tảng quản lý và bán hàng đa kênh tốt nhất cho bạn" class="fade show">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 source-item">
+                    <img height="18" src="./image/logo-vietnamplus.png"
+                         data-src="./image/logo-vietnamplus.png"
+                         alt="Nền tảng quản lý và bán hàng đa kênh tốt nhất cho bạn" class="fade show">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 source-item">
+                    <img height="25" src="./image/logo-vnexpress.png"
+                         data-src="./image/logo-vnexpress.png"
+                         alt="Nền tảng quản lý và bán hàng đa kênh tốt nhất cho bạn" class="fade show">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 source-item">
+                    <img height="31" src="./image/logo-ictnews.png"
+                         data-src="./image/logo-ictnews.png"
+                         alt="Nền tảng quản lý và bán hàng đa kênh tốt nhất cho bạn" class="fade show">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slogan text-center">
+    <div class="container">
+        <h2>Làm cho việc bán hàng trở nên dễ dàng hơn</h2>
+        <p>
+            Chúng tôi bắt đầu sứ mệnh thiêng liêng này từ năm 2008
+        </p>
+        <div class="row content">
+            <div class="col-lg-4 col-md-4">
+                <img src="./image/icon-qty-employee.png" alt="">
+                <p>+500</p>
+                <span>Nhân viên</span>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <img src="./image/icon-customer.png" alt="">
+
+                <p>+67,000</p>
+                <span>Khách hàng</span>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <img src="./image/icon-partner.png" alt="">
+
+                <p>+40</p>
+                <span>Đối tác</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+
+</body>
+</html>
