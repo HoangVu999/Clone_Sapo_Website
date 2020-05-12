@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +16,16 @@ header {
     height: 85px;
     z-index: 2;
 
+    ul {
+      li {
+        a {
+          &:hover {
+            color: #00afe6
+          }
+        }
+      }
+    }
+
     .main-logo {
       img {
         height: 54px;
@@ -33,24 +42,18 @@ header {
         margin-left: 40px;
         position: relative;
 
+        &:hover {
+          .childMenu {
+            display: block;
+          }
+        }
 
         a {
           line-height: 85px;
-          display: block;
           font-size: 16px;
           font-weight: bold;
           color: #444445;
           text-decoration: none;
-
-          &:hover {
-            color: #00afe6;
-          }
-        }
-      }
-
-      .hasChild {
-        &:hover {
-          display: block;
         }
       }
 
@@ -183,22 +186,6 @@ header {
           transform: translateZ(0);
           backface-visibility: hidden;
           white-space: nowrap;
-          transition: all .5s ease;
-
-          &:before {
-            content: "";
-            border-radius: 45px;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, .04);
-            transform: scaleX(0);
-            transform-origin: 50%;
-            transition: all .5s ease-out;
-          }
 
           span {
             display: block;
@@ -209,6 +196,11 @@ header {
             border-radius: 20px;
             transition: all .5s ease;
             color: #26b896;
+
+            &:hover {
+              background-color: #2ad38b;
+              color: white;
+            }
           }
         }
       }
@@ -284,7 +276,6 @@ header {
       text-decoration: none;
     }
   }
-
 }
 
 .solution {
@@ -374,7 +365,6 @@ header {
       border-radius: 45px;
       display: inline-block;
       transform: translateZ(0);
-
 
       &:hover {
         background-image: linear-gradient(0deg, #007bfa 8%, #00afe6 89%);
@@ -534,7 +524,6 @@ footer {
           color: #7d8492;
           display: inline-block;
           font-size: 14px;
-
         }
       }
     }

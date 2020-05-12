@@ -16,6 +16,9 @@ header .main-header {
   height: 85px;
   z-index: 2;
 }
+header .main-header ul li a:hover {
+  color: #00afe6;
+}
 header .main-header .main-logo img {
   height: 54px;
 }
@@ -29,19 +32,15 @@ header .main-header .align-items-center li {
   margin-left: 40px;
   position: relative;
 }
+header .main-header .align-items-center li:hover .childMenu {
+  display: block;
+}
 header .main-header .align-items-center li a {
   line-height: 85px;
-  display: block;
   font-size: 16px;
   font-weight: bold;
   color: #444445;
   text-decoration: none;
-}
-header .main-header .align-items-center li a:hover {
-  color: #00afe6;
-}
-header .main-header .align-items-center .hasChild:hover {
-  display: block;
 }
 header .main-header .align-items-center .childMenu {
   display: none;
@@ -159,21 +158,6 @@ header .main-header .justify-content-end li .btn-registration {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   white-space: nowrap;
-  transition: all 0.5s ease;
-}
-header .main-header .justify-content-end li .btn-registration:before {
-  content: "";
-  border-radius: 45px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.04);
-  transform: scaleX(0);
-  transform-origin: 50%;
-  transition: all 0.5s ease-out;
 }
 header .main-header .justify-content-end li .btn-registration span {
   display: block;
@@ -184,6 +168,10 @@ header .main-header .justify-content-end li .btn-registration span {
   border-radius: 20px;
   transition: all 0.5s ease;
   color: #26b896;
+}
+header .main-header .justify-content-end li .btn-registration span:hover {
+  background-color: #2ad38b;
+  color: white;
 }
 header .main-header .justify-content-end .login a {
   font-weight: 400;
