@@ -1,0 +1,198 @@
+header {
+  box-shadow: none;
+}
+
+.btn-registration {
+  color: #fff;
+  background: linear-gradient(to right, #2ad38b, #0cceb0);
+  border-radius: 45px;
+  display: inline-block;
+  line-height: 63px;
+  padding: 0 35px;
+  outline: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  white-space: nowrap;
+  font-size: 16px;
+  transition: all .5s ease;
+}
+
+.customer-sapo {
+
+
+  .banner {
+    background: url(../image/customer/bg-banner.jpg) no-repeat bottom center;
+    padding: 71px 0 89px;
+
+    h1 {
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 1.2;
+      margin: 0 0 20px;
+      color: #fff !important;
+
+      &:after {
+        background: none !important;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 300;
+      margin: 0;
+      color: #fff !important;
+
+    }
+  }
+
+  .customer-story {
+    padding-top: 76px;
+    padding-bottom: 99px;
+
+    h2 {
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 1.2;
+      margin: 0 0 13px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      margin: 0 0 57px;
+    }
+
+    .item {
+      position: relative;
+      margin: 0 0 30px;
+
+      .info {
+        position: absolute;
+        box-shadow: 0 0 32px 0 rgba(0, 47, 88, .22);
+        background: rgba(255, 255, 255, .86);
+        height: 100%;
+        width: 370px;
+        top: 0;
+        z-index: 9;
+        padding: 20px 38px;
+        text-align: justify;
+        text-align-last: center;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in-out;
+
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          margin: 0 0 35px;
+          max-height: 78px;
+          overflow: hidden;
+        }
+
+        .btn-registration {
+          height: 44px;
+          line-height: 44px;
+          font-size: 18px;
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      &:hover {
+        .info {
+          opacity: 1;
+          visibility: unset;
+        }
+      }
+    }
+
+    .viewMore {
+      text-decoration: underline;
+      font-size: 18px;
+      color: #08f;
+      vertical-align: top;
+    }
+  }
+
+  .customer-logo {
+    padding: 74px 0 47px;
+    background: #f4f4f4;
+
+    h2 {
+
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      color: #4d505b;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
+
+    .item {
+      margin-bottom: 35px;
+
+      a {
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: underline;
+        color: #08f;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.register-bottom {
+  text-align: center;
+  padding: 30px 0 45px;
+  color: #fff;
+  background: url(../image/customer/bg-register-bottom.jpg) no-repeat top center;
+
+  h2 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 56px;
+    margin: 0 0 10px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  .reg-form {
+    input {
+      width: 500px;
+      height: 65px;
+      line-height: 65px;
+      font-size: 16px;
+      color: #575757;
+      padding: 0 20px;
+      margin-right: 15px;
+      border-radius: 38px;
+      border: none;
+      outline: none;
+    }
+
+    .btn-registration {
+      height: 65px;
+      line-height: 65px;
+      padding: 0 45px;
+      font-size: 24px;
+    }
+  }
+}

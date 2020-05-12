@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập vào website bán hàng hoặc phần mềm quản lý cửa hàng với Sapo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(function () {
+            $("header").load("template/header.html");
+            $("footer").load("template/footer.html");
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="wrapper">
+    <header></header>
+    <div class="login-sapo">
+        <div class="container">
+            <h1>Lựa chọn kênh bán hàng để đăng nhập</h1>
+            <p>+ 67,000 doanh nghiệp và chủ shop đã sử dụng</p>
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-10">
+                    <div class="row justify-content-center">
+                        <div class="col-xl col-md-6 col-sm-6 login-channel">
+                            <div class="image">
+                                <a onclick="showPOSForm()" href="javascript:;">
+                                    <img src="./image/login/icon-login-1.svg"
+                                         width="71" class="fade show">
+                                </a>
+                            </div>
+                            <a class="btn-registration" onclick="showPOSForm()" href="javascript:;">POS, Omnichannel</a>
+                        </div>
+                        <div class="col-xl col-md-6 col-sm-6 login-channel">
+                            <div class="image">
+                                <a onclick="showPOSForm('GO')" href="javascript:;">
+                                    <img src="./image/login/icon-login-2.svg"
+                                         width="83" class="fade show">
+                                </a>
+                            </div>
+                            <a class="btn-registration" onclick="showPOSForm('GO')" href="javascript:;">Quản trị Sapo
+                                GO</a>
+                        </div>
+                        <div class="col-xl col-md-6 col-sm-6 login-channel">
+                            <div class="image">
+                                <a onclick="showFnbForm()" href="javascript:;">
+                                    <img src="./image/login/icon-login-3.svg"
+                                         width="77" class="fade show">
+                                </a>
+                            </div>
+                            <a class="btn-registration" onclick="showFnbForm()" href="javascript:;">Quản trị FnB</a>
+                        </div>
+                        <div class="col-xl col-md-6 col-sm-6 login-channel">
+                            <div class="image">
+                                <a onclick="showWebForm()" href="javascript:;">
+                                    <img src="./image/login/icon-login-4.svg"
+                                         width="76" class="fade show">
+                                </a>
+                            </div>
+                            <a class="btn-registration" onclick="showWebForm()" href="javascript:;">Quản trị Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="scroll-down d-none d-xl-block" data-href=".affiliate"><i
+                class="fa fa-angle-down"></i></a>
+    </div>
+    <div class="affiliate text-center">
+        <div class="container">
+            <p>Bạn đang là khách hàng của Sapo và muốn gia tăng thu nhập? Còn chần chừ gì mà không tham gia chương
+                trình</p>
+            <h2>“Giới thiệu khách hàng - Ngập tràn tiền thưởng"</h2>
+            <div class="row">
+                <div class="col-lg-5 block-content">
+                    <p>Chỉ cần giới thiệu 01 khách hàng mới đăng <br class="d-none d-lg-block">ký sử dụng các sản phẩm,
+                        dịch vụ của Sapo. <br class="d-none d-lg-block">Bạn sẽ nhận được ngay tiền mặt trị giá lên tới
+                    </p>
+                    <div class="price">
+                        <span>500.000đ</span>
+                        cùng nhiều giải thưởng giá trị khác
+                    </div>
+                    <a href="/sapo-affiliate.html" class="btn-registration">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</div>
+</body>
+
+</html>
