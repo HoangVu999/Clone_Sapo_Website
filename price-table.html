@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script>
         $(function () {
             $("header").load("template/header.html");
@@ -18,24 +19,387 @@
     </script>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/main.js">
 </head>
 <body>
-<div id="wrapper">
+<div id="wrapper" class="clearfix">
     <header></header>
-    <div class="register-bottom clearfix">
-        <div class="container">
-            <h2>Bắt đầu dùng thử miễn phí 15 ngày</h2>
-            <p>Để trải nghiệm nền tảng quản lý và bán hàng đa kênh được sử dụng nhiều nhất Việt Nam</p>
-            <div class="reg-form">
-                <input id="site_name_bottom" class="input-site-name d-none d-md-inline-block" type="text" value=""
-                       placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn"
-                >
-                <a class="btn-registration banner-home-registration event-Sapo-Free-Trial-form-open"
-                   href="javascript:;">Dùng thử miễn phí</a>
+    <div class="home-price">
+        <div class="packages text-center">
+            <div class="container">
+                <h1>Bảng giá các gói dịch vụ Sapo</h1>
+                <p>Hãy lựa chọn giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 15 ngày</p>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="item pos">
+
+                            <div class="name-price">
+                                <h2>Sapo POS</h2>
+                                <p>Phần mềm quản lý bán hàng</p>
+                                <div class="price">
+                                    <div>
+                                        <span class="price-regular"><span>Từ</span> 119.000<sup>đ</sup><span>/tháng</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="extra-info">
+                                <strong>Gói dịch vụ bao gồm:<i class="d-block d-md-none fa fa-minus"></i></strong>
+                                <ul>
+                                    <li>Sản phẩm không giới hạn</li>
+                                    <li>1 cửa hàng</li>
+                                    <li>Bán hàng trên Facebook</li>
+                                    <li>Quản lý kho</li>
+
+                                    <li>Quản lý nhân viên</li>
+                                    <li>Báo cáo bán hàng</li>
+                                    <li>Kết nối thiết bị bán hàng</li>
+                                    <li class="no-icon"><a href="/bang-gia-sapo-pos.html">Xem chi tiết <i
+                                            class="fa fa-angle-double-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <a href="javascript:;" class="btn-registration" onclick="showModalTrial(this, 4, false)">Dùng
+                                thử</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item web">
+
+
+                                    <h2>Sapo Web</h2>
+                                    <p>Thiết kế website bán hàng</p>
+                                    <div class="price">
+                                        <div>
+                                            <span class="price-regular">299.000<sup>đ</sup><span>/tháng</span></span>
+                                        </div>
+                                    </div>
+                                    <strong>Gói dịch vụ bao gồm:<i class="d-block d-md-none fa fa-plus"></i></strong>
+                                    <ul>
+                                        <li>Sản phẩm không giới hạn</li>
+                                        <li>1 website bán hàng</li>
+                                        <li>Dung lượng 1G</li>
+                                        <li>5 email tên miền</li>
+                                        <li>Thanh toán trực tuyến</li>
+                                        <li><a href="/bang-gia-sapo-web.html">Xem chi tiết <i
+                                                class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:;" class="btn-registration"
+                                       onclick="showModalTrial(this, 2, false)">Dùng thử</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item go">
+
+
+                                    <h2>Sapo GO</h2>
+                                    <p>Quản lý bán hàng online</p>
+                                    <div class="price">
+                                        <div>
+                                            <span class="price-regular"><span>Từ</span> 119.000<sup>đ</sup><span>/tháng</span></span>
+                                        </div>
+                                    </div>
+                                    <strong>Gói dịch vụ bao gồm:<i class="d-block d-md-none fa fa-plus"></i></strong>
+                                    <ul>
+                                        <li>Bán hàng trên Facebook</li>
+                                        <li>Bán hàng trên Shopee</li>
+                                        <li>Bán hàng trên Lazada</li>
+                                        <li>Quản lý kho tập trung</li>
+                                        <li>Báo cáo bán hàng</li>
+                                        <li><a href="/bang-gia-sapo-go.html">Xem chi tiết <i
+                                                class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:;" class="btn-registration"
+                                       onclick="showModalTrial(this, 6, false)">Dùng thử</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item fnb">
+                                    <h2>Sapo FNB</h2>
+                                    <p>Quản lý nhà hàng, quán cafe</p>
+                                    <div class="price">
+                                        <div>
+                                            <span class="price-regular">119.000<sup>đ</sup><span>/tháng</span></span>
+                                        </div>
+                                    </div>
+                                    <strong>Gói dịch vụ bao gồm:<i class="d-block d-md-none fa fa-plus"></i></strong>
+                                    <ul>
+                                        <li>1 nhà hàng</li>
+                                        <li>Sản phẩm không giới hạn</li>
+                                        <li>Nhân viên không giới hạn</li>
+                                        <li>Quản lý thực đơn</li>
+                                        <li>Báo cáo bán hàng</li>
+                                        <li><a href="/bang-gia-sapo-fnb.html">Xem chi tiết <i
+                                                class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:;" class="btn-registration" onclick="showAdvisoryFnb()">Tư
+                                        vấn</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item omni">
+
+
+                                    <h2>Sapo Omni</h2>
+                                    <p>Quản lý và bán hàng đa kênh</p>
+                                    <div class="price">
+                                        <div>
+                                            <span class="price-regular">599.000<sup>đ</sup><span>/tháng</span></span>
+                                        </div>
+                                    </div>
+                                    <strong>Gói dịch vụ bao gồm:<i class="d-block d-md-none fa fa-plus"></i></strong>
+                                    <ul>
+                                        <li>Sản phẩm không giới hạn</li>
+                                        <li>1 cửa hàng</li>
+                                        <li>1 website bán hàng</li>
+                                        <li>Bán hàng trên Sàn TMĐT</li>
+                                        <li>Bán hàng trên Facebook</li>
+                                        <li><a href="/bang-gia-sapo-omnichannel.html">Xem chi tiết <i
+                                                class="fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:;" class="btn-registration"
+                                       onclick="showModalTrial(this, 5, true)">Dùng thử</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="notice">
+                    * Lưu ý: Bảng giá trên chưa bao gồm phí khởi tạo 1.500.000đ cho gói Sapo web và 2.000.000đ cho gói
+                    Sapo Omni.<br>
+                    Quý khách sẽ được miễn phí chi phí khởi tạo khi đăng ký sử dụng dịch vụ Sapo Web, Sapo Omnichannel
+                    từ 2 năm trở lên.
+                </p>
             </div>
         </div>
+        <div class="advisory">
+            <div class="container">
+                <h2>Bạn chưa chọn được gói dịch vụ phù hợp ?</h2>
+                <p class="desc">
+                    Hãy để Sapo tư vấn giải pháp phù hợp nhất dành cho bạn
+                </p>
+                <a class="btn-registration" href="javascript:;" onclick="showAdvisoryForm()">Yêu cầu tư vấn miễn phí</a>
+            </div>
+        </div>
+        <div class="selling-machine text-center">
+            <div class="container">
+                <h2>Nếu bạn muốn sở hữu những thiết bị tăng tốc bán hàng</h2>
+                <p>Tham khảo ngay dòng máy bán hàng đã tích hợp sẵn cả phần cứng và phần mềm Sapo</p>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#machine-retail" role="tab"
+                           aria-controls="machine-retail" aria-selected="true">
+                            Bộ thiết bị <br class="d-block d-sm-none">dành riêng cho
+                            <span>CỬA HÀNG <br class="d-block d-sm-none">BÁN LẺ</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="machine-retail" role="tabpanel">
+                        <div class="swiper-container swiper-container-horizontal">
+                            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide item s2-basic swiper-slide-active" style="width: 378.667px;">
+                                    <h3>Sapo S2</h3>
+                                    <p>Thiết bị bán hàng chuyên nghiệp cho chuỗi <br class="d-none d-xl-block">cửa hàng
+                                        bán lẻ</p>
+                                    <p class="price">Giá: 15.900.000đ</p>
+                                    <img src="./image/price-table/machine-sapo-s2.png"
+                                         alt="Sapo S2" class="fade show">
+                                    <ul>
+                                        <li>Bán hàng trên màn hình cảm ứng 15.6 inch</li>
+                                        <li>Khách hàng theo dõi đơn hàng trên màn hình phụ</li>
+                                        <li>Tích hợp máy in nhiệt khổ 80mm ngay trên thân máy</li>
+                                        <li>Tích hợp sẵn phần mềm quản lý bán hàng Sapo POS gói 1 năm **</li>
+                                    </ul>
+                                    <span class="line"></span>
+                                    <a href="javascript:;" class="btn-registration"
+                                       onclick="loadViewPopupMachine('Sapo S2')">Tư vấn</a>
+                                </div>
+                                <div class="swiper-slide item s2-mini swiper-slide-next" style="width: 378.667px;">
+                                    <h3>Sapo S2 Mini</h3>
+                                    <p>
+                                        Thiết bị bán hàng lý tưởng sử dụng cho các <br class="d-none d-xl-block">cửa
+                                        hàng bán lẻ
+                                    </p>
+                                    <p class="price">Giá: 11.500.000đ</p>
+                                    <img src="./image/price-table/machine-sapo-s2mini.png"
+                                         alt="Sapo S2 Mini" class="fade show">
+                                    <ul>
+                                        <li>Màn hình cảm ứng mượt mà 15.6 inch hỗ trợ thao tác nhanh gọn</li>
+                                        <li>Tích hợp máy in hóa đơn trên thân máy có tốc độ 200mm/s và khổ in lớn K80
+                                        </li>
+                                        <li>Đa dạng cổng kết nối với các thiết bị: máy quét mã vạch, két đựng tiền, bàn
+                                            phím,...
+                                        </li>
+                                        <li>Miễn phí 12 tháng sử dụng phần mềm quản lý bán hàng Sapo POS **</li>
+                                    </ul>
+                                    <span class="line"></span>
+                                    <a href="javascript:;" class="btn-registration"
+                                       onclick="loadViewPopupMachine('Sapo S2 mini')">Tư vấn</a>
+                                </div>
+                                <div class="swiper-slide item sm-basic" style="width: 378.667px;">
+                                    <h3>Sapo SM Plus</h3>
+                                    <p>Máy bán hàng nhỏ gọn dành riêng cho <br class="d-none d-xl-block">cửa hàng bán lẻ
+                                        vừa và nhỏ</p>
+                                    <p class="price">Giá: 4.900.000đ</p>
+                                    <img src="./image/price-table/machine-sapo-sm.png"
+                                         alt="Sapo SM" class="fade show">
+                                    <ul>
+                                        <li>Thiết bị nhỏ gọn giúp bạn bán hàng nhanh chóng, linh hoạt</li>
+                                        <li>Tích hợp sẵn máy in hóa đơn, in 5000 hóa đơn liên tục và sắc nét</li>
+                                        <li>Quét mã vạch bằng camera sau thân máy tiện lợi</li>
+                                        <li>Miễn phí trọn đời ứng dụng quản lý bán hàng Sapo **</li>
+                                    </ul>
+                                    <span class="line"></span>
+                                    <a href="javascript:;" class="btn-registration"
+                                       onclick="loadViewPopupMachine('Sapo SM')">Tư vấn</a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination d-block d-lg-none swiper-pagination-clickable swiper-pagination-bullets">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                      role="button" aria-label="Go to slide 1"></span></div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+                <p class="noti">** Chính sách tặng phần mềm chỉ áp dụng với khách hàng ký mới</p>
+            </div>
+        </div>
+        <hr>
+        <div class="sapo-shop">
+            <div class="container">
+                <p>Ngoài ra, bạn có thể tham khảo thêm</p>
+                <h2>Những thiết bị bán hàng riêng lẻ của Sapo Shop</h2>
+                <div class="row">
+                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item row no-gutters active">
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/slide1.jpg"></div>
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/sapo-1.jpg"></div>
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/sapo2.jpg"></div>
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/sapo3.jpg"></div>
+                            </div>
+                            <div class="carousel-item row no-gutters">
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/sapo4.jpg"></div>
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/sapo5.jpg"></div>
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/slide1.jpg"></div>
+                                <div class="col-3 float-left"><img class="img-fluid"
+                                                                   src="./image/price-table/sapo3.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <a href="https://shop.sapo.vn" class="btn-registration" target="_blank">Xem thêm thiết bị khác</a>
+        </div>
+        <div class="faq">
+            <div class="container">
+                <h2>Một số câu hỏi thường gặp</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="question">
+                            <h4 data-number="1.">
+                                Tôi được dùng thử dịch vụ trong vòng bao lâu? Nếu tôi muốn mua gói dịch vụ chính thức
+                                thì
+                                tôi phải làm gì? <i class="fa fa-angle-down"></i>
+                            </h4>
+                            <p>
+                                Bạn có thể đăng ký để được trải nghiệm miễn phí Sapo trong vòng 15 ngày. <br>
+                                Chuyên viên tư vấn của Sapo sẽ luôn đồng hành với bạn trong suốt thời gian dùng thử để
+                                giải
+                                đáp các yêu cầu, thắc mắc của bạn cũng như hỗ trợ bạn khi mua gói dịch vụ chính thức.
+                                Ngoài
+                                ra, đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng hỗ trợ bạn qua hotline 1800
+                                6750.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <h4 data-number="2.">Phí khởi tạo có bao gồm trong giá gói dịch vụ không? Phí này được thu 1
+                                lần
+                                duy nhất đúng không? <i class="fa fa-angle-down"></i></h4>
+                            <p>
+                                Bạn thân mến, trong giá gói dịch vụ chưa bao gồm phí khởi tạo. Phí khởi tạo sẽ được tính
+                                duy
+                                nhất 1 lần khi bạn ký hợp đồng chính thức sử dụng dịch vụ. Đặc biệt, nếu bạn ký hợp đồng
+                                dịch vụ 2 năm trở lên sẽ được miễn phí khởi tạo.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <h4 data-number="3.">Nếu tôi đang dùng Sapo Web mà muốn dùng thêm tính năng quản lý bán hàng
+                                thì
+                                tính phí như thế nào? <i class="fa fa-angle-down"></i></h4>
+                            <p>
+                                Nếu bạn đang dùng Sapo Web và muốn dùng thêm tính năng quản lý bán hàng, bạn có thể dùng
+                                đồng thời 2 gói POS và Web hoặc có thể sử dụng gói Omnichannel chỉ với 599,000đ/tháng
+                                (đã
+                                bao gồm thiết kế website và phần mềm quản lý bán hàng).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="question">
+                            <h4 data-number="4.">Tôi đang dùng gói Sapo POS với 1 cửa hàng, nay tôi muốn mở rộng và mua
+                                thêm
+                                cửa hàng thì tính phí như thế nào? <i class="fa fa-angle-down"></i></h4>
+                            <p>
+                                Với các khách hàng đang sử dụng gói Sapo POS hoặc Sapo Omnichannel, chi phí để mua thêm
+                                cửa
+                                hàng là 150,000đ/cửa hàng/tháng. <br>
+                                Đặc biệt, nếu mua thêm cửa hàng từ 2 năm trở lên sẽ được chiết khấu từ 10% đến 22%.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <h4 data-number="5.">Khi hết thời gian sử dụng dịch vụ, tôi muốn gia hạn dịch vụ thì chi phí
+                                như
+                                thế nào? <i class="fa fa-angle-down"></i></h4>
+                            <p>
+                                Tùy vào thời điểm bạn gia hạn dịch vụ mà % chiết khấu sẽ khác nhau. Bạn gia hạn càng sớm
+                                sẽ
+                                càng được chiết khấu nhiều. Chiết khấu tối đa lên tới 55%.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <h4 data-number="6.">Nếu website hết dung lượng, tôi muốn mua thêm dung lượng thì có được
+                                không
+                                và chi phí như thế nào? <i class="fa fa-angle-down"></i></h4>
+                            <p>
+                                Bạn hoàn toàn có thể mua thêm dung lượng cho Website với mức phí là 120.000VND/1GB/tháng
+                                .
+                                Nếu mua dung lượng từ 2 năm trở lên sẽ được chiết khấu từ 10% - 22%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register-bottom clearfix">
+            <div class="container">
+                <h2>Bắt đầu dùng thử miễn phí 15 ngày</h2>
+                <p>Để trải nghiệm nền tảng quản lý và bán hàng đa kênh được sử dụng nhiều nhất Việt Nam</p>
+                <div class="reg-form">
+                    <input id="site_name_bottom" class="input-site-name d-none d-md-inline-block" type="text" value=""
+                           placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn"
+                    >
+                    <a class="btn-registration banner-home-registration event-Sapo-Free-Trial-form-open"
+                       href="javascript:;">Dùng thử miễn phí</a>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
     </div>
-    <footer></footer>
 </div>
 </body>
 
