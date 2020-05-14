@@ -1,6 +1,7 @@
 @import "price-table";
 @import "customer";
 @import "login";
+@import "mobile";
 
 * {
   padding: 0;
@@ -398,7 +399,7 @@ header {
 
 .customers {
   padding: 21px 0 40px;
-  background: url(../image/bg-customers.jpg) no-repeat bottom center;
+  background: url(../image/bg-customers.jpg) repeat bottom center;
 
   h2 {
     font-size: 40px;
@@ -469,7 +470,7 @@ header {
 
 .slogan {
   color: #fff;
-  background: url(../image/bg-slogan.jpg) no-repeat center top;
+  background: url(../image/bg-slogan.jpg) repeat center top;
   padding: 80px 0 40px;
 
   h2 {

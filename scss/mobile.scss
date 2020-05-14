@@ -1,0 +1,77 @@
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  #wrapper {
+    .banner {
+      h1 {
+        font-size: 24px;
+        line-height: 38px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .btn-registration {
+        font-size: 16px;
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+
+    .slogan {
+      h2 {
+        font-size: 24px;
+        line-height: 38px;
+      }
+
+      .content {
+        img {
+          height: 60px;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 0 !important;
+        }
+
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+
+    footer {
+      .footer-address {
+        .contact-info {
+          font-size: 12px;
+        }
+
+        a {
+          font-size: 12px;
+        }
+      }
+
+      .footer-bct-hanggia {
+        display: none;
+      }
+
+      .footer-bct {
+        right: 20px;
+        top: 350px;
+
+        .show {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .news-aboutus {
+    .source-item {
+      img {
+        width: 40px;
+        height: 15px;
+      }
+    }
+  }
+}

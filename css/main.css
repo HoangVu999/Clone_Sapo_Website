@@ -884,6 +884,56 @@ header {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  #wrapper .banner h1 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  #wrapper .banner p {
+    font-size: 20px;
+  }
+  #wrapper .banner .btn-registration {
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+  }
+  #wrapper .slogan h2 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  #wrapper .slogan .content img {
+    height: 60px;
+  }
+  #wrapper .slogan .content p {
+    font-size: 20px;
+    margin: 0 !important;
+  }
+  #wrapper .slogan .content span {
+    font-size: 15px;
+  }
+  #wrapper footer .footer-address .contact-info {
+    font-size: 12px;
+  }
+  #wrapper footer .footer-address a {
+    font-size: 12px;
+  }
+  #wrapper footer .footer-bct-hanggia {
+    display: none;
+  }
+  #wrapper footer .footer-bct {
+    right: 20px;
+    top: 350px;
+  }
+  #wrapper footer .footer-bct .show {
+    height: 20px;
+  }
+
+  .news-aboutus .source-item img {
+    width: 40px;
+    height: 15px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -1222,7 +1272,7 @@ header .main-header .justify-content-end .login a {
 
 .customers {
   padding: 21px 0 40px;
-  background: url(../image/bg-customers.jpg) no-repeat bottom center;
+  background: url(../image/bg-customers.jpg) repeat bottom center;
 }
 .customers h2 {
   font-size: 40px;
@@ -1281,7 +1331,7 @@ header .main-header .justify-content-end .login a {
 
 .slogan {
   color: #fff;
-  background: url(../image/bg-slogan.jpg) no-repeat center top;
+  background: url(../image/bg-slogan.jpg) repeat center top;
   padding: 80px 0 40px;
 }
 .slogan h2 {
