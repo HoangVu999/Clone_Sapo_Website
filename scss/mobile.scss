@@ -74,4 +74,41 @@
       }
     }
   }
+
+  .customer-sapo {
+    .customer-story {
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+    .customer-logo {
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+  }
+
+  .register-bottom {
+    h2 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .register-bottom {
+    .reg-form {
+      .btn-registration {
+        height: 60px;
+        line-height: 60px;
+        margin-top: 20px;
+      }
+    }
+  }
 }

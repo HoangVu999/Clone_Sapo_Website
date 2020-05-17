@@ -617,7 +617,7 @@ header {
 }
 
 .customer-sapo .banner {
-  background: url(../image/customer/bg-banner.jpg) no-repeat bottom center;
+  background: url(../image/customer/bg-banner.jpg) repeat bottom center;
   padding: 71px 0 89px;
 }
 .customer-sapo .banner h1 {
@@ -732,7 +732,7 @@ header {
   text-align: center;
   padding: 30px 0 45px;
   color: #fff;
-  background: url(../image/customer/bg-register-bottom.jpg) no-repeat top center;
+  background: url(../image/customer/bg-register-bottom.jpg) repeat top center;
 }
 .register-bottom h2 {
   font-size: 42px;
@@ -932,6 +932,28 @@ header {
   .news-aboutus .source-item img {
     width: 40px;
     height: 15px;
+  }
+
+  .customer-sapo .customer-story h2 {
+    font-size: 28px;
+  }
+  .customer-sapo .customer-logo h2 {
+    font-size: 28px;
+  }
+
+  .register-bottom h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .register-bottom p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .register-bottom .reg-form .btn-registration {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
   }
 }
 * {
