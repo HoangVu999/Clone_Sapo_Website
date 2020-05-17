@@ -1354,12 +1354,71 @@ header .main-header .justify-content-end .login a {
   max-width: 100%;
 }
 
+.news-aboutus {
+  padding: 60px 0 0;
+}
 .news-aboutus h2 {
   text-align: center;
   font-size: 40px;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 35px;
+}
+.news-aboutus .nav-tabs {
+  justify-content: center;
+  border-bottom: none;
+  margin: 0 0 43px;
+}
+.news-aboutus .nav-tabs .nav-item .nav-link {
+  padding: 0 18px 13px;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  color: #b7b7b7;
+  position: relative;
+}
+.news-aboutus .nav-tabs .nav-item .nav-link .nav-link.active:after {
+  content: "";
+  width: 103px;
+  height: 3px;
+  background: #26d290;
+  position: absolute;
+  bottom: -1.5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.news-aboutus .nav-tabs .badge {
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #ff8da2;
+  border-radius: 3px;
+  font-weight: bold;
+  vertical-align: top;
+  margin: -5px 0 0 7px;
+}
+.news-aboutus .nav-tabs .news-item {
+  position: relative;
+  background: #fff;
+  box-shadow: #f2f2f2 0 10px 40px 1px;
+  padding-bottom: 35px;
+}
+.news-aboutus .nav-tabs .news-item a {
+  text-align: center;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.news-aboutus .nav-tabs .news-item a img {
+  height: 250px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.news-aboutus .nav-tabs .news-item .time {
+  margin: 30px 20px 15px;
+  font-size: 14px;
+  color: #b7b7b7;
 }
 .news-aboutus .news-sources {
   border-top: 1px solid #e6e6e6;
