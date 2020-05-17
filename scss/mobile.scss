@@ -111,4 +111,41 @@
       }
     }
   }
+
+  .affiliate {
+    padding: 30px 0;
+
+    .block-content {
+      .price {
+        text-align: center;
+
+        span {
+          font-weight: 500;
+          font-size: 32px;
+        }
+      }
+
+      p {
+        display: none;
+      }
+
+      .btn-registration {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .login-sapo {
+    padding: 30px 0;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
 }
